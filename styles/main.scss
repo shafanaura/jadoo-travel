@@ -1,9 +1,14 @@
+@use 'base/typography';
+@use 'abstracts/functions';
+@use 'abstracts/mixins';
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @if (functions.get-font-family(body) != functions.get-font-family(heading)) {
+    @include mixins.font-family(body);
+  }
 }
 
 a {
@@ -13,4 +18,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
 }

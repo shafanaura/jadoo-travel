@@ -1,0 +1,6 @@
+@use '../../../styles/abstracts/mixins';
+
+.btn_primary {
+  border: 1px solid pink;
+  @include mixins.font-family(body);
+}

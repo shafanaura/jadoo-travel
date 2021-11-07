@@ -1,0 +1,14 @@
+@use '../../../styles/abstracts/mixins';
+@use '../../../styles/abstracts/functions';
+
+.navbar {
+  @include mixins.flex(space-between);
+  ul {
+    @include mixins.font-family(heading);
+    display: flex;
+    gap: 20px;
+  }
+  li {
+    display: inline;
+  }
+}

@@ -1,0 +1,13 @@
+@use 'variables';
+
+@function get-font-family($elem) {
+  @return map-get(variables.$font__family, $elem);
+}
+
+@function get-font-weight($elem) {
+  @return map-get(variables.$font__weight, $elem);
+}
+
+@function get-content-padding($elem) {
+  @return map-get(variables.$content__padding, $elem);
+}

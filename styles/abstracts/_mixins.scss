@@ -1,0 +1,15 @@
+@use 'functions';
+
+@mixin font-family($elem) {
+  font-family: functions.get-font-family($elem);
+}
+
+@mixin font-weight($elem) {
+  font-weight: functions.get-font-weight($elem);
+}
+
+@mixin flex($justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}

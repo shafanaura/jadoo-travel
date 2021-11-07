@@ -1,0 +1,69 @@
+// --------------------------------------------
+// Colors -------------------------------------
+// Usage example: color(primary, main)
+// --------------------------------------------
+
+$color: (
+  typography: (
+    1: #182538,
+    2: #6b7a90,
+    1i: #ffffff,
+    2i: #8595ae,
+  ),
+  bg: (
+    1: #ffffff,
+    2: #f8f9fb,
+    3: #e9edf3,
+    1i: #182538,
+    2i: #223146,
+    3i: #304057,
+  ),
+  primary: (
+    1: #535fd7,
+    2: #7c85e1,
+    3: #212880,
+  ),
+  secondary: (
+    1: #61effd,
+    2: #93f4fe,
+    3: #2feafc,
+  ),
+  tertiary: (
+    1: #ffbc48,
+    2: #ffcf7b,
+    3: #fe7e1f,
+  ),
+);
+
+// --------------------------------------------
+// Typography ---------------------------------
+// --------------------------------------------
+$font__family: (
+  body: 'Poppins',
+  // font-family(body) - primary
+  heading: 'Hind Siliguri',
+  // font-family(heading)
+  title: 'Volkhov',
+  // font-family(title)
+);
+
+$font__weight: (
+  regular: 400,
+  // font__weight(regular)
+  medium: 500,
+  // font__weight(medium)
+  semibold: 600,
+  // font__weight(semibold)
+  bold: 700,
+  // font__weight(bold)
+  extrabold: 800,
+  // font__weight(extrabold)
+);
+
+// --------------------------------------------
+// Structure ----------------------------------
+// --------------------------------------------
+$content__padding: (
+  mobile: 16px,
+  desktop: 24px,
+);
